@@ -4,6 +4,9 @@ Just a pure python3 module for service discovery.
 
 # install
 ```bash
+# install from pip
+$ pip3 install -U tornado_discovery
+# or install from source code
 $ cd ./tornado_discovery
 $ python3 ./setup.py install
 ```
