@@ -6,14 +6,27 @@
 
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
-	name = 'tornado_discovery',
+    name = 'tornado_discovery',
     version = '0.0.2',
+    description = "service discovery based on tornado",
+    long_description = long_description,
+    long_description_content_type = "text/markdown",
+    url = "https://github.com/fiefdx/tornado_discovery",
     author = 'fiefdx',
     author_email = 'fiefdx@163.com',
     package_dir = {'tornado_discovery': 'src'},
     packages = ['tornado_discovery'],
     install_requires = [
         "tornado >= 5.1.1"
+    ],
+    license = "MIT",
+    classifiers = [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
     ]
 )
