@@ -126,7 +126,7 @@ class BaseConnection(object):
                         self._heartbeat_timeout = IOLoop.instance().add_timeout(
                             IOLoop.time(IOLoop.instance()) + self.info["heartbeat_timeout"],
                             self._remove_connection
-                            )
+                        )
                     else:
                         send_data = {
                             "command": Command.heartbeat,
