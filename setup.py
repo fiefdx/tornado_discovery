@@ -11,7 +11,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = 'tornado_discovery',
-    version = '0.0.2',
+    version = '0.0.3',
     description = "service discovery based on tornado",
     long_description = long_description,
     long_description_content_type = "text/markdown",
