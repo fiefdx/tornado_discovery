@@ -6,12 +6,14 @@
 
 from setuptools import setup
 
+from src import __version__
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
     name = 'tornado_discovery',
-    version = '0.0.4',
+    version = __version__,
     description = "service discovery based on tornado",
     long_description = long_description,
     long_description_content_type = "text/markdown",

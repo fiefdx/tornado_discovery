@@ -6,4 +6,4 @@ from . import connection
 from . import listener
 from . import registrant
 
-__version__ = "0.0.1"
+__version__ = "0.0.5"
