@@ -67,7 +67,7 @@ class BaseRegistrant(object):
         try:
             data_string = json.dumps(data).encode("utf-8")
             data_crc32 = crc32sum(data_string)
-            LOG.info("Send: %s", data)
+            LOG.debug("Send: %s", data)
             msg = b"%s%s%s%s" % (data_string, Message.msg_sp, data_crc32, Message.msg_end)
             yield self._stream.write(msg)
         except Exception as e:
@@ -103,7 +103,7 @@ class BaseRegistrant(object):
             self.send_message(data)
             data = yield self.read_message()
             if data["data"]["status"] == Status.success:
-                LOG.info("Client Received Heartbeat Message: %s", data["data"])
+                LOG.debug("Client Received Heartbeat Message: %s", data["data"])
             else:
                 LOG.error("Client Received Heartbeat Message: %s", data["data"])
         except Exception as e:
