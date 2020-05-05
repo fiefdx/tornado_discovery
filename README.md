@@ -1,6 +1,7 @@
 # tornado_discovery
 
 Just a pure python3 module for service discovery.
+Include some basic classes for develop distributed services.
 
 # install
 ```bash
@@ -11,7 +12,7 @@ $ cd ./tornado_discovery
 $ python3 ./setup.py install
 ```
 
-# test
+# test & try it
 ```bash
 # run listener
 $ cd ./tornado_discovery/test
